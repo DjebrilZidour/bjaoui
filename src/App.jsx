@@ -9,13 +9,17 @@ function App() {
     <>
        <nav
         style={{ backgroundColor: "#FFFDCB" }}
-        className="shadow-lg px-16  rounded-bl-3xl flex justify-between items-center"
+        className="shadow-lg px-16  rounded-bl-3xl flex justify-center lg:justify-between items-center"
       >
+        <div className="flex flex-col items-center justify-center">
         <img
         className="rounded-full p-1 h-24 w-24"
           src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
           alt=""
         />
+        <h1>Bjaoui</h1>
+        </div>
+       
         <ul className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden indie-flower-regular gap-8">
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
             <Link
@@ -70,15 +74,35 @@ function App() {
          
         </ul>
       </nav>
+      <section id="home">
+        <div>
+          <h1> welcome to <br /> mohamed lbjaoui school</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, suscipit, accusantium iste minus veniam esse quisquam ipsum, porro incidunt blanditiis molestias beatae explicabo tenetur placeat at consectetur facere. Sunt ipsam delectus impedit! Assumenda nulla sint inventore nihil quas. Quaerat, ex?</p>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </section>
 
-      <div className="h-scrren border-2 p-4  m-16" id="#home">
-        <h1 className="mt-72 pt-72 text-3xl center text-red-500 p-4 border-4"></h1>
-
-        <p className="text-3xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugit modi autem sint voluptatum molestias excepturi consectetur, dolor libero repudiandae, animi natus, iusto illum. Et doloribus minima vitae id fuga.
-        </p>
-      </div>
-
+      <section id="about">
+        <h1>our story</h1>
+        <p></p>
+      </section>
+      <section id="social-media">
+        <h1>social media</h1>
+      </section>
+      <section id="school-pics">
+        <div>
+          <img src="#" alt="school-pic" />
+        </div>
+        <div>
+          <img src="#" alt="school-pic" />
+        </div>
+        <div>
+          <img src="#" alt="school-pic" />
+        </div>
+      </section>
+      
       <div className="h-screen border-2" id="about"><h1>about</h1></div>
     </>
   );
