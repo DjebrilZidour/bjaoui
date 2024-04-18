@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import { Link } from "react-scroll";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+      <nav>
+        <img
+          src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
+          alt=""
+        />
+        <ul>
+          <li>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              HOME
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              about
+            </Link>
+          </li>
+          <li>about</li>
+          <li>social media</li>
+          <li>pictures of school</li>
+        </ul>
+      </nav>
+
+      <div className="h-scrren border-2 p-4  m-16" id="#home">
+        <h1 className="mt-72 pt-72 text-3xl center text-red-500 p-4 border-4"> beaklk zouan ana machi tyara</h1>
+
+        <p className="text-3xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugit modi autem sint voluptatum molestias excepturi consectetur, dolor libero repudiandae, animi natus, iusto illum. Et doloribus minima vitae id fuga.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <div className="h-screen border-2" id="about"><h1>about</h1></div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
