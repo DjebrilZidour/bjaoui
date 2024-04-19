@@ -4,78 +4,87 @@ import viteLogo from "/vite.svg";
 import { Link } from "react-scroll";
 import "./App.css";
 
- const List = (props) => {
-  return (
-    <div style={{display:props.isOn?"block":"hidden"}}className="bg-red-100 text-white">
-      <ul className="flex flex-col justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden indie-flower-regular gap-8">
-        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
-            home
-          </Link>
-        </li>
-
-        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            about
-          </Link>
-        </li>
-
-        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-          <Link
-            to="scocial-media"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            social media
-          </Link>
-        </li>
-
-        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-          <Link
-            to="school-pics"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            school pics
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
-};
 function App() {
   const [isListOn, setListOn] = useState(false);
+  const List = (props) => {
+    let info = props.isOn;
+    return (
+      <div
+        style={{ display: info ? "block" : "none" }}
+        className="bg-red-100 text-white"
+      >
+        <ul className="flex flex-col justify-between items-center text-black-100  max-sm:flex-col indie-flower-regular gap-8">
+          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+              home
+            </Link>
+          </li>
 
+          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              about
+            </Link>
+          </li>
+
+          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+            <Link
+              to="scocial-media"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              social media
+            </Link>
+          </li>
+
+          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+            <Link
+              to="school-pics"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              school pics
+            </Link>
+          </li>
+        </ul>
+      </div>
+    );
+  };
   return (
     <>
       <nav
         style={{ backgroundColor: "#FFFDCB" }}
         className="shadow-lg px-16  rounded-bl-3xl flex justify-center lg:justify-between items-center"
       >
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex  items-center justify-between gap-32">
           <img
             className="rounded-full p-1 h-24 w-24"
             src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
             alt=""
           />
-          <h1>Bjaoui</h1>
-          <button onClick={()=>{
-            if (isListOn) {
-              setListOn(false)
-            }else{
-              setListOn(true)
-            }
-          }}>see more</button>
+         
+          <img
+            onClick={() => {
+              if (isListOn) {
+                setListOn(false);
+              } else {
+                setListOn(true);
+              }
+            }}
+            className="w-8 h-8 lg:hidden"
+            src="https://cdn-icons-png.flaticon.com/128/3917/3917762.png"
+            alt=""
+          />
+         
         </div>
 
         <ul className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden indie-flower-regular gap-8">
@@ -122,7 +131,7 @@ function App() {
           </li>
         </ul>
       </nav>
-      <List isOn = {isListOn}/>
+      <List isOn={isListOn} />
 
       <section id="home">
         <div>
