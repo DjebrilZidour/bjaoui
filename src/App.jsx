@@ -26,7 +26,7 @@ function App() {
               offset={-100}
               duration={500}
             >
-              about
+              our mission
             </Link>
           </li>
 
@@ -107,7 +107,7 @@ function App() {
               offset={-100}
               duration={500}
             >
-              about
+              our misssion
             </Link>
           </li>
 
@@ -138,10 +138,10 @@ function App() {
       </nav>
       <List isOn={isListOn} />
 
-      <section className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24 lg:mt-0 px-16 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize" id="home" src="">
+      <section className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24  lg:mt-0 px-16 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize" id="home" src="">
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64">
           <h1 className="text-4xl capitalize">
-            welcome to  Mohamed Lbjaoui <br /> High School
+            welcome to  Mohamed LBjaoui <br /> High School
           </h1>
           <p className="text-xl">
             Mohamed Lbjaoui High School is a beacon of educational excellence
@@ -157,14 +157,24 @@ function App() {
         </div>
       </section>
 
-     <section id="about">
-        <h1>our story</h1>
+     <section className="indie-flower-regular " id="about">
+        <h1>our mission</h1>
         <p></p>
       </section>
-      <section id="social-media">
-        <h1>social media</h1>
+      <section className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-12" id="social-media">
+        <h1 className="capitalize text-5xl text-center p-4">social media</h1>
+        <p className="text-2xl">you can mna mnhih el mohim marhba bikoum</p>
+        <div className="flex gap-4 items-center justify-center">
+        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="" /></a>
+        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="" /></a>
+        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" /></a>
+        </div>
+        
+        
+        
+        
       </section>
-      <section id="school-pics">
+      <section className="indie-flower-regular " id="school-pics">
         <div>
           <img src="#" alt="school-pic" />
         </div>
@@ -176,11 +186,9 @@ function App() {
         </div>
       </section>
 
-      <div className="h-screen border-2" id="about">
-        <h1>about</h1>
-      </div> 
-    </>
-  );
+     
+    </>                                                                 
+      );
 }
 
 export default App;
