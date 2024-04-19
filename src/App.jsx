@@ -61,7 +61,7 @@ function App() {
     <>
       <nav
         style={{ backgroundColor: "#FFFDCB" }}
-        className="shadow-lg  px-16 py-1 rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
+        className="shadow-lg  px-16 py-2 rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
       >
         <div className="flex items-center justify-between w-full">
           <div className="">
