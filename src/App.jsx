@@ -113,14 +113,14 @@ function App() {
 
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize w-max">
             <Link
-              to="scocial-media"
+              to="social-media"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
             >
-             social media
-             </Link>
+              social media
+            </Link>
           </li>
 
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
@@ -138,10 +138,14 @@ function App() {
       </nav>
       <List isOn={isListOn} />
 
-      <section className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24  lg:mt-0 px-16 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize" id="home" src="">
+      <section
+        className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24  lg:mt-0 px-8 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize"
+        id="home"
+        src=""
+      >
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64">
           <h1 className="text-4xl capitalize">
-            welcome to  Mohamed LBjaoui <br /> High School
+            welcome to Mohamed LBjaoui <br /> High School
           </h1>
           <p className="text-xl">
             Mohamed Lbjaoui High School is a beacon of educational excellence
@@ -153,27 +157,62 @@ function App() {
           </p>
         </div>
         <div className="lg:w-1/2 mb-64">
-          <img className="rounded-3xl" src="https://scontent.falg6-2.fna.fbcdn.net/v/t39.30808-6/210372420_4086465968115815_7468991513453658856_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEDlMLwxlHK02SKrBjOVVaXMGQgbaQisWswZCBtpCKxawU-oxxSRm7OuonzSl9nx3N4HCHgGLg72NrF1qcsKeVt&_nc_ohc=lQfTCQpiZBwAb4u3Okv&_nc_ht=scontent.falg6-2.fna&oh=00_AfB0u540Fl0jTUtXrO92p0YVJ7PDKKMqufI4bHRjZTv0ug&oe=662874E9" alt="" />
+          <img
+            className="rounded-3xl"
+            src="https://scontent.falg6-2.fna.fbcdn.net/v/t39.30808-6/210372420_4086465968115815_7468991513453658856_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEDlMLwxlHK02SKrBjOVVaXMGQgbaQisWswZCBtpCKxawU-oxxSRm7OuonzSl9nx3N4HCHgGLg72NrF1qcsKeVt&_nc_ohc=lQfTCQpiZBwAb4u3Okv&_nc_ht=scontent.falg6-2.fna&oh=00_AfB0u540Fl0jTUtXrO92p0YVJ7PDKKMqufI4bHRjZTv0ug&oe=662874E9"
+            alt=""
+          />
         </div>
       </section>
 
-     <section className="indie-flower-regular " id="about">
-        <h1>our mission</h1>
-        <p></p>
+      <section className="indie-flower-regular flex flex-col justify-between items-center py-4 capitalize px-8 gap-8 lg:flex-row" id="about">
+       <div className="lg:w-1/2 flex flex-col justify-center items-center gap-8">
+       <h1 className="text-5xl">our mission</h1>
+        <p className="text-center lg:text-start">
+          Our mission at Mohamed Lbjaoui High School is to provide a dynamic
+          learning environment that fosters intellectual curiosity, critical
+          thinking, and a passion for lifelong learning. We strive to instill
+          values of integrity, compassion, and resilience in our students,
+          preparing them to become responsible global citizens and leaders of
+          tomorrow.
+        </p>
+       </div>
+       <div>
+        <img className="rounded-3xl p-4" src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+       </div>
       </section>
-      <section className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-12" id="social-media">
+
+      <section
+        className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4"
+        id="social-media"
+      >
         <h1 className="capitalize text-5xl text-center p-4">social media</h1>
-        <p className="text-2xl">you can mna mnhih el mohim marhba bikoum</p>
+        <p className="text-2xl text-center">you can mna mnhih el mohim marhba bikoum</p>
         <div className="flex gap-4 items-center justify-center">
-        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="" /></a>
-        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="" /></a>
-        <a target="new" href="google.com"><img className="w-16" src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" /></a>
+          <a target="new" href="https://google.com">
+            <img
+              className="w-16"
+              src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
+              alt=""
+            />
+          </a>
+          <a target="new" href="google.com">
+            <img
+              className="w-16"
+              src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
+              alt=""
+            />
+          </a>
+          <a target="new" href="google.com">
+            <img
+              className="w-16"
+              src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
+              alt=""
+            />
+          </a>
         </div>
-        
-        
-        
-        
       </section>
+
       <section className="indie-flower-regular " id="school-pics">
         <div>
           <img src="#" alt="school-pic" />
@@ -185,10 +224,8 @@ function App() {
           <img src="#" alt="school-pic" />
         </div>
       </section>
-
-     
-    </>                                                                 
-      );
+    </>
+  );
 }
 
 export default App;
