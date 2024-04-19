@@ -63,11 +63,11 @@ function App() {
     <>
       <nav
         style={{ backgroundColor: "#FFFDCB" }}
-        className="shadow-lg px-16  rounded-bl-3xl flex justify-center lg:justify-between items-center"
+        className="shadow-lg  px-8 py-1 rounded-bl-3xl flex justify-between lg:justify-between items-center"
       >
-        <div className="flex  items-center justify-between gap-32">
+        <div className="flex justify-between items-center ">
           <img
-            className="rounded-full p-1 h-24 w-24"
+            className="rounded-full h-24 w-24"
             src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
             alt=""
           />
@@ -87,7 +87,8 @@ function App() {
          
         </div>
 
-        <ul className="flex justify-between items-center text-black-100  max-sm:flex-col max-sm:hidden indie-flower-regular gap-8">
+        <ul className="flex justify-between items-center text-black-100 hidden lg:flex indie-flower-regular gap-8">
+
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
             <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
               home
