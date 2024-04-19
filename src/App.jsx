@@ -32,7 +32,7 @@ function App() {
 
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
             <Link
-              to="scocial-media"
+              to="social-media"
               spy={true}
               smooth={true}
               offset={-100}
