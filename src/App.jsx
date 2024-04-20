@@ -293,23 +293,23 @@ function App() {
         <h1 className="text-5xl shadows-into-light-regular text-white text-center">
           this website was developed and coded by :<br />{" "}
           <a>
-            <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer hover:bg-white hover:text-black">
+            <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer  ">
               ZIDOUR Djebril
             </span>
           </a>{" "}
-          <span className="zilla-slab-light text-4xl">
+          <span className=" text-4xl px-4 w-full rounded-3xl text-yellow-200 cursor-pointer  ">
             {" "}
             <br /> zouan abd eraouf{" "}
           </span>
-          <span className="zilla-slab-light text-4xl">
+          <span className="  px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
             {" "}
             <br /> Mdouh ayoub{" "}
           </span>
-          <span className="zilla-slab-light text-4xl">
+          <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
             {" "}
             <br /> moussouni nassim{" "}
           </span>
-          <span className="zilla-slab-light text-4xl">
+          <span className="  px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
             {" "}
             <br /> Moualk cyrine{" "}
           </span>
