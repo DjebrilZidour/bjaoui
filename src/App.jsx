@@ -144,7 +144,7 @@ function App() {
         id="home"
         src=""
       >
-        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64">
+        <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64 animate__animated animate__fadeInTopLeft">
           <h1 className="text-4xl capitalize">
             Welcome to Mohamed LBjaoui <br /> High School
           </h1>
@@ -157,7 +157,7 @@ function App() {
             community engagement.
           </p>
         </div>
-        <div className="lg:w-1/2 mb-64">
+        <div className="lg:w-1/2 mb-64 animate__animated animate__fadeInTopRight">
           <img
             className="rounded-3xl w-full"
             src="https://lh5.googleusercontent.com/p/AF1QipNjw1uVRhT0wBVp95edtgeYloI-aNK3JdyLn_cs=w427-h240-k-no"
@@ -170,7 +170,7 @@ function App() {
         className="indie-flower-regular flex flex-col justify-between items-center py-4 capitalize px-8 gap-8 lg:flex-row"
         id="about"
       >
-        <div className="lg:w-1/2 flex flex-col justify-center items-center gap-8">
+        <div className="lg:w-1/2 flex flex-col justify-center items-center gap-8 animate__animated animate__fadeInBottomLeft">
           <h1 className="text-5xl">our mission</h1>
           <p className="text-center lg:text-start">
             Our mission at Mohamed Lbjaoui High School is to provide a dynamic
@@ -181,7 +181,7 @@ function App() {
             tomorrow.
           </p>
         </div>
-        <div>
+        <div className="animate__animated animate__fadeInBottomRight">
           <img
             className="rounded-3xl p-4"
             src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -204,21 +204,30 @@ function App() {
           with you!
         </p>
         <div className="flex gap-4 items-center justify-center">
-          <a target="new" href="https://www.facebook.com/profile.php?id=100029482436185&locale=fr_FR">
+          <a
+            target="new"
+            href="https://www.facebook.com/profile.php?id=100029482436185&locale=fr_FR"
+          >
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
               alt=""
             />
           </a>
-          <a target="new" href="https://www.instagram.com/lycee_mohamed_bjaoui1?igsh=MW56OXZyZjU3dXJ5bg==">
+          <a
+            target="new"
+            href="https://www.instagram.com/lycee_mohamed_bjaoui1?igsh=MW56OXZyZjU3dXJ5bg=="
+          >
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
               alt=""
             />
           </a>
-          <a target="new" href="https://www.youtube.com/@LyceeBedjaoui1/featured">
+          <a
+            target="new"
+            href="https://www.youtube.com/@LyceeBedjaoui1/featured"
+          >
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
