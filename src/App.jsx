@@ -57,6 +57,7 @@ function App() {
       </div>
     );
   };
+
   return (
     <>
       <nav
@@ -155,6 +156,7 @@ function App() {
             as a testament to academic rigor, holistic development, and
             community engagement.
           </p>
+          
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
@@ -186,7 +188,7 @@ function App() {
         className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4"
         id="social-media"
       >
-        <h1 className="capitalize text-5xl text-center p-4">social media</h1>
+        <h1 className="capitalize text-5xl text-center ">social media</h1>
         <p className="text-2xl text-center">you can mna mnhih el mohim marhba bikoum</p>
         <div className="flex gap-4 items-center justify-center">
           <a target="new" href="https://google.com">
@@ -213,17 +215,24 @@ function App() {
         </div>
       </section>
 
-      <section className="indie-flower-regular " id="school-pics">
-        <div>
-          <img src="#" alt="school-pic" />
+      <section className="indie-flower-regular py-8 px-8 capitalize" id="school-pics">
+        <h1 className="text-5xl text-center mb-8 ">school pics </h1>
+        <p className="text-center text-2xl mb-4">this are some pictures of the high school </p>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-4 px-8 my-4">
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
         </div>
-        <div>
-          <img src="#" alt="school-pic" />
+        <div className="flex flex-col lg:flex-row justify-between items-center  gap-4 my-8 px-8">
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
         </div>
-        <div>
-          <img src="#" alt="school-pic" />
-        </div>
+      
       </section>
+      <footer className="bg-black w-full capitalize flex justify-center items-center p-8 ">
+        <h1 className="text-5xl shadows-into-light-regular text-white text-center">this website was developed and coded by :<br /> <a><span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer hover:bg-white hover:text-black">ZIDOUR Djebril</span></a></h1>
+      </footer>
     </>
   );
 }
