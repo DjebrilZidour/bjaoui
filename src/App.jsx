@@ -66,7 +66,7 @@ function App() {
         className="shadow-lg  px-16 py-2  rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
       >
         <div className="flex items-center justify-between w-full">
-          <div className="">
+          <div className="rounded-3xl">
             <img
               className="rounded-full h-24 w-24 "
               src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
