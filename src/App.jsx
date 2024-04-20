@@ -146,7 +146,7 @@ function App() {
       >
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64">
           <h1 className="text-4xl capitalize">
-            welcome to Mohamed LBjaoui <br /> High School
+            Welcome to Mohamed LBjaoui <br /> High School
           </h1>
           <p className="text-xl">
             Mohamed Lbjaoui High School is a beacon of educational excellence
