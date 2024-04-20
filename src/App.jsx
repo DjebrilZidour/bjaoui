@@ -310,11 +310,11 @@ function App() {
           </h1>
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
             {" "}
-            zouan abd eraouf{" "}
+            Zouane abderraouf{" "}
           </h1>
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
-            Moualk cyrine
+            Moualk serine
           </h1>
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
