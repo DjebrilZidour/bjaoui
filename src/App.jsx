@@ -157,9 +157,9 @@ function App() {
             community engagement.
           </p>
           
-          <button className="bg-red-500 px-4 py-2 rounded-2xl text-white text-xl" onClick={()=>{
+          
 
-          }}> <Link to="about"spy={true} smooth={true} offset={50} duration={500}>Our Mission</Link> </button>
+         <Link to="about"spy={true} smooth={true} offset={50} duration={500}><h1 className="bg-red-500 px-4 py-2 rounded-2xl text-white text-xl">Our Mission</h1></Link> 
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
