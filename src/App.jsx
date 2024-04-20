@@ -204,21 +204,21 @@ function App() {
           with you!
         </p>
         <div className="flex gap-4 items-center justify-center">
-          <a target="new" href="https://google.com">
+          <a target="new" href="https://www.facebook.com/profile.php?id=100029482436185&locale=fr_FR">
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
               alt=""
             />
           </a>
-          <a target="new" href="google.com">
+          <a target="new" href="https://www.instagram.com/lycee_mohamed_bjaoui1?igsh=MW56OXZyZjU3dXJ5bg==">
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
               alt=""
             />
           </a>
-          <a target="new" href="google.com">
+          <a target="new" href="https://www.youtube.com/@LyceeBedjaoui1/featured">
             <img
               className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
