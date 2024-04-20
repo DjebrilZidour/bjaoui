@@ -275,7 +275,11 @@ function App() {
       <section className="flex justify-center items-center flex-col gap-8 my-8">
         <h1 className="capitalize text-5xl ">our location</h1>
         <div className="w-full flex justify-center items-center px-8 gap-12">
-          <img src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png" className="hidden lg:block" alt="" />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png"
+            className="hidden lg:block"
+            alt=""
+          />
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.392285143576!2d3.1799559586914063!3d36.717850299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e5192b0000001%3A0xfa0e5c71dc2fdbfe!2z2KvYp9mG2YjZitipINmF2K3ZhdivINmE2KjYrNin2YjZiiAx!5e0!3m2!1sen!2sdz!4v1713636392250!5m2!1sen!2sdz"
             width="450"
@@ -285,35 +289,42 @@ function App() {
             referrerpolicy="no-referrer-when-downgrade"
             className="rounded-3xl border-2 border-black "
           ></iframe>
-          <img src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png" className="hidden lg:block" alt="" />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png"
+            className="hidden lg:block"
+            alt=""
+          />
         </div>
       </section>
 
-      <footer className="bg-black w-full capitalize flex justify-center items-center p-8 ">
-        <h1 className="text-5xl shadows-into-light-regular text-white text-center">
+      <footer className="bg-black w-full capitalize flex justify-center items-center p-8 flex justify-center items-center flex-col">
+        <h1 className="text-5xl shadows indie-flower-regular text-white text-center">
+          project proposed by:{" "}
+          <span className="text-yellow-400 ">miss Touati</span> <br /> <br />
           this website was developed and coded by :<br />{" "}
-          <a>
-            <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer  ">
-              ZIDOUR Djebril
-            </span>
-          </a>{" "}
-          <span className=" text-4xl px-4 w-full rounded-3xl text-yellow-200 cursor-pointer  ">
-            {" "}
-            <br /> zouan abd eraouf{" "}
-          </span>
-          <span className="  px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
-            {" "}
-            <br /> Mdouh ayoub{" "}
-          </span>
-          <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
-            {" "}
-            <br /> moussouni nassim{" "}
-          </span>
-          <span className="  px-4 w-full rounded-3xl text-yellow-200 cursor-pointer ">
-            {" "}
-            <br /> Moualk cyrine{" "}
-          </span>
         </h1>
+
+        <div className="flex justify-center items-center flex-col text-center gap-2 shadows-into-light-regular mt-4 capitalize text-yellow-200">
+          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
+            Zidour Djebril
+          </h1>
+          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
+            {" "}
+            zouan abd eraouf{" "}
+          </h1>
+          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
+            {" "}
+            Moualk cyrine
+          </h1>
+          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
+            {" "}
+            moussouni nassim{" "}
+          </h1>
+          <h1 className="  text-5xl w-full rounded-3xl  cursor-pointer ">
+            {" "}
+            Mdouh ayoub
+          </h1>
+        </div>
       </footer>
     </>
   );
