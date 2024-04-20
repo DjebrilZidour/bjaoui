@@ -185,29 +185,34 @@ function App() {
       </section>
 
       <section
-        className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4"
+        className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4 px-16"
         id="social-media"
       >
         <h1 className="capitalize text-5xl text-center ">social media</h1>
-        <p className="text-2xl text-center">you can mna mnhih el mohim marhba bikoum</p>
+        <h3 className="text-3xl">Follow, Like, Share, and Engage!</h3>
+        <p className="text-2xl text-center px-8">
+
+Join us on social media to stay connected, share your experiences, and be part of our vibrant online community. We look forward to connecting with you!
+
+</p>
         <div className="flex gap-4 items-center justify-center">
           <a target="new" href="https://google.com">
             <img
-              className="w-16"
+              className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
               alt=""
             />
           </a>
           <a target="new" href="google.com">
             <img
-              className="w-16"
+              className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
               alt=""
             />
           </a>
           <a target="new" href="google.com">
             <img
-              className="w-16"
+              className="w-16 hover:w-20"
               src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
               alt=""
             />
