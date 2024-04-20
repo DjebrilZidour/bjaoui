@@ -156,7 +156,6 @@ function App() {
             as a testament to academic rigor, holistic development, and
             community engagement.
           </p>
-          
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
@@ -167,21 +166,28 @@ function App() {
         </div>
       </section>
 
-      <section className="indie-flower-regular flex flex-col justify-between items-center py-4 capitalize px-8 gap-8 lg:flex-row" id="about">
-       <div className="lg:w-1/2 flex flex-col justify-center items-center gap-8">
-       <h1 className="text-5xl">our mission</h1>
-        <p className="text-center lg:text-start">
-          Our mission at Mohamed Lbjaoui High School is to provide a dynamic
-          learning environment that fosters intellectual curiosity, critical
-          thinking, and a passion for lifelong learning. We strive to instill
-          values of integrity, compassion, and resilience in our students,
-          preparing them to become responsible global citizens and leaders of
-          tomorrow.
-        </p>
-       </div>
-       <div>
-        <img className="rounded-3xl p-4" src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
-       </div>
+      <section
+        className="indie-flower-regular flex flex-col justify-between items-center py-4 capitalize px-8 gap-8 lg:flex-row"
+        id="about"
+      >
+        <div className="lg:w-1/2 flex flex-col justify-center items-center gap-8">
+          <h1 className="text-5xl">our mission</h1>
+          <p className="text-center lg:text-start">
+            Our mission at Mohamed Lbjaoui High School is to provide a dynamic
+            learning environment that fosters intellectual curiosity, critical
+            thinking, and a passion for lifelong learning. We strive to instill
+            values of integrity, compassion, and resilience in our students,
+            preparing them to become responsible global citizens and leaders of
+            tomorrow.
+          </p>
+        </div>
+        <div>
+          <img
+            className="rounded-3xl p-4"
+            src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt=""
+          />
+        </div>
       </section>
 
       <section
@@ -191,10 +197,10 @@ function App() {
         <h1 className="capitalize text-5xl text-center ">social media</h1>
         <h3 className="text-3xl">Follow, Like, Share, and Engage!</h3>
         <p className="text-2xl text-center px-8">
-
-Join us on social media to stay connected, share your experiences, and be part of our vibrant online community. We look forward to connecting with you!
-
-</p>
+          Join us on social media to stay connected, share your experiences, and
+          be part of our vibrant online community. We look forward to connecting
+          with you!
+        </p>
         <div className="flex gap-4 items-center justify-center">
           <a target="new" href="https://google.com">
             <img
@@ -220,23 +226,63 @@ Join us on social media to stay connected, share your experiences, and be part o
         </div>
       </section>
 
-      <section className="indie-flower-regular py-8 px-8 capitalize" id="school-pics">
+      <section
+        className="indie-flower-regular py-8 px-8 capitalize"
+        id="school-pics"
+      >
         <h1 className="text-5xl text-center mb-8 ">school pics </h1>
-        <p className="text-center text-2xl mb-4">this are some pictures of the high school </p>
+        <p className="text-center text-2xl mb-4">
+          this are some pictures of the high school{" "}
+        </p>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4 px-8 my-4">
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center  gap-4 my-8 px-8">
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
-          <img className="lg:w-4/12 w-full" src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800" alt="school-pic" />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
+          <img
+            className="lg:w-4/12 w-full"
+            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="school-pic"
+          />
         </div>
-      
       </section>
+
       <footer className="bg-black w-full capitalize flex justify-center items-center p-8 ">
-        <h1 className="text-5xl shadows-into-light-regular text-white text-center">this website was developed and coded by :<br /> <a><span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer hover:bg-white hover:text-black">ZIDOUR Djebril</span></a></h1>
+        <h1 className="text-5xl shadows-into-light-regular text-white text-center">
+          this website was developed and coded by :<br />{" "}
+          <a>
+            <span className=" px-4 w-full rounded-3xl text-yellow-200 cursor-pointer hover:bg-white hover:text-black">
+              ZIDOUR Djebril
+            </span>
+          </a>{" "}
+          <span className="zilla-slab-light text-4xl"> <br /> zouan abd eraouf </span>
+          <span className="zilla-slab-light text-4xl"> <br /> Mdouh ayoub </span>
+          <span className="zilla-slab-light text-4xl"> <br /> moussouni nassim </span>
+          <span className="zilla-slab-light text-4xl"> <br /> Moualk cyrine </span>
+        </h1>
       </footer>
     </>
   );
