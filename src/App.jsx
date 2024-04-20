@@ -2,65 +2,65 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import "./App.css";
 
+const List = (props) => {
+  return (
+    <section
+      style={{ display:props.isNavOpened ?"block":"none" }}
+      className="bg-red-200 text-white rounded-tl-3xl rounded-tr-3xl "
+    >
+     
+      <ul className="flex flex-col justify-between items-center text-black-100  indie-flower-regular gap-8 p-4 lg:hidden">
+        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+            home
+          </Link>
+        </li>
+
+        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            our mission
+          </Link>
+        </li>
+
+        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+          <Link
+            to="social-media"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            social media
+          </Link>
+        </li>
+
+        <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
+          <Link
+            to="school-pics"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            school pics
+          </Link>
+        </li>
+      </ul>
+
+    </section>
+  );
+};
+
 function App() {
-  const [isListOn, setListOn] = useState(false);
+  const [isNavOpened, switchNavState] = useState(false);
 
-  const List = (props) => {
-    return (
-      <section
-        style={{ display: props.isOn? "block" : "none" }}
-        className="bg-red-200 text-white rounded-tl-3xl rounded-tr-3xl animate__animated animate__fadeInDown "
-      >
-        <img onClick={()=>{
-          props.setListOn(false)
-        }} src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="" />
-        <ul className="flex flex-col justify-between items-center text-black-100   indie-flower-regular gap-8 p-4">
-          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
-              home
-            </Link>
-          </li>
-
-          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              our mission
-            </Link>
-          </li>
-
-          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-            <Link
-              to="social-media"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              social media
-            </Link>
-          </li>
-
-          <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
-            <Link
-              to="school-pics"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              school pics
-            </Link>
-          </li>
-        </ul>
-
-      </section>
-    );
-  };
+  
 
   return (
     <>
@@ -69,29 +69,21 @@ function App() {
         className="shadow-lg  px-16 py-2  rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
       >
         <div className="flex items-center justify-between w-full">
-          <div className="rounded-3xl">
+
+          <div>
             <img
               className="rounded-full h-24 w-24 "
               src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
               alt=""
             />
           </div>
-
           <div>
-            <img
-              onClick={() => {
-                if (isListOn) {
-                  setListOn(false);
-                } else {
-                  setListOn(true);
-                }
-              }}
-              className="w-12 h-12 lg:hidden "
-              h
-              src="https://cdn-icons-png.flaticon.com/128/3917/3917762.png"
-              alt=""
-            />
+            <img className="w-12"  onClick={()=>{
+              switchNavState(!isNavOpened)
+            }} src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="" />
+           
           </div>
+        
         </div>
 
         <ul className="flex justify-between items-center text-black-100 hidden lg:flex indie-flower-regular gap-16">
@@ -139,7 +131,7 @@ function App() {
         </ul>
       </nav>
 
-      <List isOn={isListOn} setListOn={setListOn} />
+      <List isNavOpened={isNavOpened} switchNavState={switchNavState} />
 
 
       <section
