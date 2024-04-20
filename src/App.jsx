@@ -4,12 +4,11 @@ import "./App.css";
 
 function App() {
   const [isListOn, setListOn] = useState(false);
-  const List = (props) => {
-    let info = props.isOn;
 
+  const List = () => {
     return (
       <div
-        style={{ display: info ? "block" : "none" }}
+        style={{ display: isListOn? "block" : "none" }}
         className="bg-red-100 text-white rounded-tl-3xl rounded-tr-3xl animate__animated animate__fadeInDown "
       >
         <ul className="flex flex-col justify-between items-center text-black-100  max-sm:flex-col indie-flower-regular gap-8 p-4">
@@ -55,6 +54,7 @@ function App() {
             </Link>
           </li>
         </ul>
+
       </div>
     );
   };
@@ -139,7 +139,9 @@ function App() {
           </li>
         </ul>
       </nav>
+
       <List isOn={isListOn} />
+
 
       <section
         className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24  lg:mt-0 px-8 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize"
