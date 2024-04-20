@@ -5,10 +5,10 @@ import "./App.css";
 function App() {
   const [isListOn, setListOn] = useState(false);
 
-  const List = () => {
+  const List = (props) => {
     return (
       <div
-        style={{ display: isListOn? "block" : "none" }}
+        style={{ display: props.isOn ? "block" : "none" }}
         className="bg-red-100 text-white rounded-tl-3xl rounded-tr-3xl animate__animated animate__fadeInDown "
       >
         <ul className="flex flex-col justify-between items-center text-black-100  max-sm:flex-col indie-flower-regular gap-8 p-4">
@@ -54,19 +54,19 @@ function App() {
             </Link>
           </li>
         </ul>
-
       </div>
     );
   };
 
   return (
     <>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <nav
         style={{ backgroundColor: "#FFFDCB" }}
         className="shadow-lg  px-16 py-2  rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
       >
         <div className="flex items-center justify-between w-full">
-          <div className="">
+          <div>
             <img
               className="rounded-full h-24 w-24 "
               src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
@@ -75,7 +75,8 @@ function App() {
           </div>
 
           <div>
-            <img
+          
+             <img
               onClick={() => {
                 if (isListOn) {
                   setListOn(false);
@@ -84,14 +85,9 @@ function App() {
                 }
               }}
               className="w-12 h-12 lg:hidden pointer"
-              h
-              src={
-                isListOn
-                  ? "https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
-                  : "https://cdn-icons-png.flaticon.com/128/3917/3917762.png"
-              }
+              src="https://www.svgrepo.com/show/530534/medicine-icon.svg"
               alt=""
-            />
+            /> 
           </div>
         </div>
 
@@ -139,9 +135,7 @@ function App() {
           </li>
         </ul>
       </nav>
-
-      <List isOn={isListOn} />
-
+        <List isOn={isListOn} />
 
       <section
         className="flex flex-col items-center justify-center lg:justify-between lg:flex-row mt-24  lg:mt-0 px-8 lg:py-12 gap-12 bg-cover bg-center h-screen home indie-flower-regular capitalize"
@@ -160,10 +154,22 @@ function App() {
             as a testament to academic rigor, holistic development, and
             community engagement.
           </p>
-          
-          <button className="bg-red-500 px-4 py-2 rounded-2xl text-white text-xl" onClick={()=>{
 
-          }}> <Link to="about"spy={true} smooth={true} offset={50} duration={500}>Our Mission</Link> </button>
+          <button
+            className="bg-red-500 px-4 py-2 rounded-2xl text-white text-xl"
+            onClick={() => {}}
+          >
+            {" "}
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Our Mission
+            </Link>{" "}
+          </button>
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
@@ -292,7 +298,7 @@ function App() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.392285143576!2d3.1799559586914063!3d36.717850299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e5192b0000001%3A0xfa0e5c71dc2fdbfe!2z2KvYp9mG2YjZitipINmF2K3ZhdivINmE2KjYrNin2YjZiiAx!5e0!3m2!1sen!2sdz!4v1713636392250!5m2!1sen!2sdz"
             width="450"
             height="450"
-            allowfullscreen=""
+           
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             className="rounded-3xl border-2 border-black "
