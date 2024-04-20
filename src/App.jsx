@@ -145,7 +145,7 @@ function App() {
         src=""
       >
         <div className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-12 lg:mb-64">
-          <h1 className="text-4xl capitalize mt-24">
+          <h1 className="text-4xl capitalize">
             welcome to Mohamed LBjaoui <br /> High School
           </h1>
           <p className="text-xl">
@@ -156,10 +156,6 @@ function App() {
             as a testament to academic rigor, holistic development, and
             community engagement.
           </p>
-          
-          
-
-         <Link to="about"spy={true} smooth={true} offset={50} duration={500}><h1 className="bg-red-500 px-4 py-2 rounded-2xl text-white text-xl">Our Mission</h1></Link> 
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
@@ -308,7 +304,7 @@ function App() {
           this website was developed and coded by :<br />{" "}
         </h1>
 
-        <div className="flex justify-center items-center flex-col text-center gap-2 shadows-into-light-regular mt-4 capitalize text-yellow-200 py-4">
+        <div className="flex justify-center items-center flex-col text-center gap-2 shadows-into-light-regular mt-4 capitalize text-yellow-200">
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
             Zidour Djebril
           </h1>
