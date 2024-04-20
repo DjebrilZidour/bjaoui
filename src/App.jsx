@@ -159,8 +159,8 @@ function App() {
         </div>
         <div className="lg:w-1/2 mb-64">
           <img
-            className="rounded-3xl"
-            src="https://scontent.falg6-2.fna.fbcdn.net/v/t39.30808-6/210372420_4086465968115815_7468991513453658856_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEDlMLwxlHK02SKrBjOVVaXMGQgbaQisWswZCBtpCKxawU-oxxSRm7OuonzSl9nx3N4HCHgGLg72NrF1qcsKeVt&_nc_ohc=lQfTCQpiZBwAb4u3Okv&_nc_ht=scontent.falg6-2.fna&oh=00_AfB0u540Fl0jTUtXrO92p0YVJ7PDKKMqufI4bHRjZTv0ug&oe=662874E9"
+            className="rounded-3xl w-full"
+            src="https://lh5.googleusercontent.com/p/AF1QipNjw1uVRhT0wBVp95edtgeYloI-aNK3JdyLn_cs=w427-h240-k-no"
             alt=""
           />
         </div>
@@ -195,7 +195,9 @@ function App() {
         id="social-media"
       >
         <h1 className="capitalize text-5xl text-center">social media</h1>
-        <h3 className="text-4xl text-center">Follow, Like, Share, and Engage!</h3>
+        <h3 className="text-4xl text-center">
+          Follow, Like, Share, and Engage!
+        </h3>
         <p className="text-2xl text-center px-8">
           Join us on social media to stay connected, share your experiences, and
           be part of our vibrant online community. We look forward to connecting
@@ -272,7 +274,8 @@ function App() {
 
       <section className="flex justify-center items-center flex-col gap-8 my-8">
         <h1 className="capitalize text-5xl ">our location</h1>
-        <div className="w-full flex justify-center items-center px-8">
+        <div className="w-full flex justify-center items-center px-8 gap-12">
+          <img src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png" className="hidden lg:block" alt="" />
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.392285143576!2d3.1799559586914063!3d36.717850299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e5192b0000001%3A0xfa0e5c71dc2fdbfe!2z2KvYp9mG2YjZitipINmF2K3ZhdivINmE2KjYrNin2YjZiiAx!5e0!3m2!1sen!2sdz!4v1713636392250!5m2!1sen!2sdz"
             width="450"
@@ -282,6 +285,7 @@ function App() {
             referrerpolicy="no-referrer-when-downgrade"
             className="rounded-3xl border-2 border-black "
           ></iframe>
+          <img src="https://cdn-icons-png.flaticon.com/128/4284/4284108.png" className="hidden lg:block" alt="" />
         </div>
       </section>
 
