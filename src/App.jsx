@@ -5,12 +5,15 @@ import "./App.css";
 function App() {
   const [isListOn, setListOn] = useState(false);
 
-  const List = () => {
+  const List = (props) => {
     return (
-      <div
-        style={{ display: isListOn? "block" : "none" }}
+      <section
+        style={{ display: props.isOn? "block" : "none" }}
         className="bg-red-200 text-white rounded-tl-3xl rounded-tr-3xl animate__animated animate__fadeInDown "
       >
+        <img onClick={()=>{
+          props.setListOn(false)
+        }} src="https://cdn-icons-png.flaticon.com/128/3917/3917759.png" alt="" />
         <ul className="flex flex-col justify-between items-center text-black-100   indie-flower-regular gap-8 p-4">
           <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
             <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
@@ -55,7 +58,7 @@ function App() {
           </li>
         </ul>
 
-      </div>
+      </section>
     );
   };
 
@@ -83,13 +86,9 @@ function App() {
                   setListOn(true);
                 }
               }}
-              className="w-12 h-12  "
+              className="w-12 h-12 lg:hidden "
               h
-              src={
-                isListOn
-                  ? "https://cdn-icons-png.flaticon.com/128/3917/3917759.png"
-                  : "https://cdn-icons-png.flaticon.com/128/3917/3917762.png"
-              }
+              src="https://cdn-icons-png.flaticon.com/128/3917/3917762.png"
               alt=""
             />
           </div>
@@ -140,7 +139,7 @@ function App() {
         </ul>
       </nav>
 
-      <List isOn={isListOn} />
+      <List isOn={isListOn} setListOn={setListOn} />
 
 
       <section
@@ -339,3 +338,5 @@ function App() {
 }
 
 export default App;
+
+// https://cdn-icons-png.flaticon.com/128/3917/3917762.png
