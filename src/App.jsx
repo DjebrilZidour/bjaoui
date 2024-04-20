@@ -78,7 +78,7 @@ function App() {
             />
           </div>
           <div>
-            <img className="w-12"  onClick={()=>{
+            <img className="w-12 lg:hidden"  onClick={()=>{
               switchNavState(!isNavOpened)
             }} src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="" />
            
