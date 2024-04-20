@@ -191,11 +191,11 @@ function App() {
       </section>
 
       <section
-        className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4 px-16"
+        className="indie-flower-regular flex flex-col items-center justify-center gap-8 py-4 px-4"
         id="social-media"
       >
-        <h1 className="capitalize text-5xl text-center ">social media</h1>
-        <h3 className="text-3xl">Follow, Like, Share, and Engage!</h3>
+        <h1 className="capitalize text-5xl text-center">social media</h1>
+        <h3 className="text-4xl text-center">Follow, Like, Share, and Engage!</h3>
         <p className="text-2xl text-center px-8">
           Join us on social media to stay connected, share your experiences, and
           be part of our vibrant online community. We look forward to connecting
@@ -270,6 +270,21 @@ function App() {
         </div>
       </section>
 
+      <section className="flex justify-center items-center flex-col gap-8 my-8">
+        <h1 className="capitalize text-5xl ">our location</h1>
+        <div className="w-full flex justify-center items-center px-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.392285143576!2d3.1799559586914063!3d36.717850299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e5192b0000001%3A0xfa0e5c71dc2fdbfe!2z2KvYp9mG2YjZitipINmF2K3ZhdivINmE2KjYrNin2YjZiiAx!5e0!3m2!1sen!2sdz!4v1713636392250!5m2!1sen!2sdz"
+            width="450"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="rounded-3xl border-2 border-black "
+          ></iframe>
+        </div>
+      </section>
+
       <footer className="bg-black w-full capitalize flex justify-center items-center p-8 ">
         <h1 className="text-5xl shadows-into-light-regular text-white text-center">
           this website was developed and coded by :<br />{" "}
@@ -278,10 +293,22 @@ function App() {
               ZIDOUR Djebril
             </span>
           </a>{" "}
-          <span className="zilla-slab-light text-4xl"> <br /> zouan abd eraouf </span>
-          <span className="zilla-slab-light text-4xl"> <br /> Mdouh ayoub </span>
-          <span className="zilla-slab-light text-4xl"> <br /> moussouni nassim </span>
-          <span className="zilla-slab-light text-4xl"> <br /> Moualk cyrine </span>
+          <span className="zilla-slab-light text-4xl">
+            {" "}
+            <br /> zouan abd eraouf{" "}
+          </span>
+          <span className="zilla-slab-light text-4xl">
+            {" "}
+            <br /> Mdouh ayoub{" "}
+          </span>
+          <span className="zilla-slab-light text-4xl">
+            {" "}
+            <br /> moussouni nassim{" "}
+          </span>
+          <span className="zilla-slab-light text-4xl">
+            {" "}
+            <br /> Moualk cyrine{" "}
+          </span>
         </h1>
       </footer>
     </>
