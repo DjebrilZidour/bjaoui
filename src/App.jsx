@@ -83,7 +83,7 @@ function App() {
                   setListOn(true);
                 }
               }}
-              className="w-12 h-12 lg:hidden pointer"
+              className="w-12 h-12  "
               h
               src={
                 isListOn
