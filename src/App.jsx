@@ -8,7 +8,9 @@ const List = (props) => {
       style={{ display:props.isNavOpened ?"block":"none" }}
       className="bg-red-200 text-white rounded-tl-3xl rounded-tr-3xl "
     >
-     
+     <img className="w-12 absolute right-10 top-40 cursor-pointer" src="https://cdn-icons-png.flaticon.com/128/3917/3917762.png" onClick={()=>{
+      props.switchNavState(false)
+     }} alt="" />
       <ul className="flex flex-col justify-between items-center text-black-100  indie-flower-regular gap-8 p-4 lg:hidden">
         <li className="px-4 font-semibold text-black cursor-pointer hover:underline text-xl capitalize">
           <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
@@ -331,4 +333,3 @@ function App() {
 
 export default App;
 
-// https://cdn-icons-png.flaticon.com/128/3917/3917762.png
