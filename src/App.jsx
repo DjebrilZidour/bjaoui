@@ -6,6 +6,7 @@ function App() {
   const [isListOn, setListOn] = useState(false);
   const List = (props) => {
     let info = props.isOn;
+
     return (
       <div
         style={{ display: info ? "block" : "none" }}
@@ -62,16 +63,17 @@ function App() {
     <>
       <nav
         style={{ backgroundColor: "#FFFDCB" }}
-        className="shadow-lg  px-16 py-2 rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
+        className="shadow-lg  px-16 py-2  rounded-bl-3xl flex justify-center lg:justify-between items-center w-full"
       >
         <div className="flex items-center justify-between w-full">
           <div className="">
             <img
-              className="rounded-full h-24 w-full "
+              className="rounded-full h-24 w-24 "
               src="https://yt3.googleusercontent.com/GDpaxeA5Pzjb25OFU2yG1OZAfAgzKMzSVpqBAsU7SzZmMkDU2XvBGtIytkmLvLcGVfSPGGoJqg=s176-c-k-c0x00ffffff-no-rj"
               alt=""
             />
           </div>
+
           <div>
             <img
               onClick={() => {
@@ -81,7 +83,7 @@ function App() {
                   setListOn(true);
                 }
               }}
-              className="w-8 h-8 lg:hidden"
+              className="w-12 h-12 lg:hidden pointer"
               h
               src={
                 isListOn
