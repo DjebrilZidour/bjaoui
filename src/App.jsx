@@ -247,35 +247,35 @@ function App() {
         </p>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4 px-8 my-4">
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72"
+            src="https://i.ibb.co/HxWCZTT/9-D61-E868-2-FF7-4-F00-8-FD6-16819-E920830.jpg"
             alt="school-pic"
           />
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72"
+            src="https://i.ibb.co/pnrXkgd/86-AC08-A9-5074-4-A26-8561-487951002489.jpg"
             alt="school-pic"
           />
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72"
+            src="https://i.ibb.co/pzF9GX3/IMAGE-2024-05-13-20-51-13.jpg"
             alt="school-pic"
           />
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center  gap-4 my-8 px-8">
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72" 
+            src="https://i.ibb.co/YNJjc1r/IMAGE-2024-05-13-20-51-10.jpg"
             alt="school-pic"
           />
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72"
+            src="https://i.ibb.co/k4SdXF6/IMAGE-2024-05-13-20-51-08.jpg"
             alt="school-pic"
           />
           <img
-            className="lg:w-4/12 w-full"
-            src="https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&w=800"
+            className="lg:w-4/12 w-full lg:h-72"
+            src="https://i.ibb.co/tB8qQrr/IMAGE-2024-05-13-20-51-06.jpg"
             alt="school-pic"
           />
         </div>
@@ -317,8 +317,7 @@ function App() {
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
             Zidour Djebril
           </h1>
-          
-         
+
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
             moussouni nassim{" "}
