@@ -317,14 +317,8 @@ function App() {
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
             Zidour Djebril
           </h1>
-          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer  ">
-            {" "}
-            Zouane abderraouf{" "}
-          </h1>
-          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
-            {" "}
-            Moualk serine
-          </h1>
+          
+         
           <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
             moussouni nassim{" "}
@@ -332,6 +326,10 @@ function App() {
           <h1 className="  text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
             Kharza yasser
+          </h1>
+          <h1 className=" text-5xl w-full rounded-3xl  cursor-pointer ">
+            {" "}
+            Moualk serine
           </h1>
           <h1 className="  text-5xl w-full rounded-3xl  cursor-pointer ">
             {" "}
